@@ -8,7 +8,7 @@ import wordList from './data/wordList_ES';
 import winnerWords from './data/winnerWords_ES';
 
 const App = () => {
-  const INFINIDLE_DEBUG = true;
+  const INFINIDLE_DEBUG = false;
   const MAX_ATTEMPTS = 6;
   
   const [words, setWords] = useState(Array(MAX_ATTEMPTS).fill(Array(5).fill('')));
