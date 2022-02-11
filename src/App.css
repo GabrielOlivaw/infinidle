@@ -1,38 +1,106 @@
-.App {
+body {
   text-align: center;
+  font-family: 'Noto Sans', 'Courier New';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: 'Rowdies', 'Arial';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App {
+  position: relative;
+}
+
+.notificationMessage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 200px;
+  background-color:wheat;
+}
+
+.navigationBar {
+  position: relative;
+  width: 80%;
+  margin: 0px auto 40px auto;
+  padding: 1px 0px;
+  background-color: lightgray;
+}
+
+.scores {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  line-height: 0.4em;
+  text-align: right;
+  font-size: 0.8em;
+}
+
+@media (max-width: 450px) {
+  .scores {
+    bottom: 0px;
+    right: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.board {
+  margin: auto;
+}
+
+.line {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  margin: 10px 4px;
+  font-size: 1.6em;
+}
+
+.squareGreen {
+  background-color: greenyellow;
+}
+
+.squareOrange {
+  background-color: orange;
+}
+
+#keyboard {
+  margin-top: 40px;
+}
+
+.keyboardRow {
+  margin-bottom: 4px;
+}
+
+.keyLetter {
+  display: inline-block;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
   color: white;
+  background-color: gray;
+  border: 1px solid;
+  margin: 4px;
+  font-weight: bold;
+  user-select: none;
 }
 
-.App-link {
-  color: #61dafb;
+.letterNot {
+  background-color: lightgray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.keyLetter:focus {
+  box-shadow: 4px 4px 4px 1px black;
+}
+
+.actionKey {
+  width: 100px;
 }
