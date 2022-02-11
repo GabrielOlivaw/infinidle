@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/infinidle/static/css/main.81c7f2f3.css",
+    "main.js": "/infinidle/static/js/main.3d6614ea.js",
+    "index.html": "/infinidle/index.html",
+    "main.81c7f2f3.css.map": "/infinidle/static/css/main.81c7f2f3.css.map",
+    "main.3d6614ea.js.map": "/infinidle/static/js/main.3d6614ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81c7f2f3.css",
+    "static/js/main.3d6614ea.js"
+  ]
+}
